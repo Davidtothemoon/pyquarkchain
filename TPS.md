@@ -4,7 +4,7 @@
 
 **Number of CPUs**
 
-[How many logical CPUs does the machine have for running one cluster?]
+48
 
 **Memory (GB)**
 
@@ -12,11 +12,11 @@
 
 **Storage (GB)**
 
-[Note down both the type and capacity of the storage on one machine. For example, SSD 1024G.]
+296 GB
 
 **Network**
 
-[Comment on the network connecting clusters. For example, 1 Gbps LAN]
+1 Gbps LAN
 
 **Machine Type (Optional)**
 
@@ -29,7 +29,7 @@
 
 **Peak TPS**
 
-[Note down the highest TPS observed.]
+4847.15
 
 **Video URL**
 
@@ -37,7 +37,30 @@
 
 **Output From `stats` Tool**
 ```
-[Copy the complete output from `stats` here. It should capture the cluster configuration and at least 10 minute continuous samples (60 rows) with at least one sample showing the TPS claimed above.]
+----------------------------------------------------------------------------------------------------
+                                      QuarkChain Cluster Stats
+----------------------------------------------------------------------------------------------------
+CPU:                48
+Memory:             296 GB
+IP:                 localhost
+Shards:             128
+Servers:            128
+Shard Interval:     10
+Root Interval:      60
+Syncing:            False
+Mining:             True
+Peers:              172.31.20.202:38291
+----------------------------------------------------------------------------------------------------
+Timestamp                     TPS   Pending tx  Confirmed tx       BPS      SBPS      ROOT       CPU
+----------------------------------------------------------------------------------------------------
+2018-10-24 22:24:58          0.00            0             0     19.60      0.00         1     79.98
+2018-10-24 22:25:08          0.00            0             0     19.60      0.00         1     74.34
+2018-10-24 22:25:18          0.00            0             0     19.60      0.00         1     79.69
+2018-10-24 22:25:28          0.00         1200             0     19.62      0.00         1     84.99
+2018-10-24 22:25:38        577.47        46872         34648     20.67      0.00         1     78.71
+2018-10-24 22:25:48       3464.93       318312        207896     25.35      0.00         1     85.85
+2018-10-24 22:25:58       4241.07       427192        254464     42.20      0.00         1     86.40
+2018-10-24 22:26:08       4847.15       476003        288557     47.15      0.00         1     88.06
 ```
 
 **Additional Comment**
